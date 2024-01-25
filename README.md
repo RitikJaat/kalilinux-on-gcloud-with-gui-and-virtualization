@@ -25,20 +25,32 @@ grep -cw vmx /proc/cpuinfo
 # Configure kali 
 
 sudo -i 
+
 cd /etc/apt 
+
 nano sources.list 
+
 (delete all the deb files here and paste this)
+
 deb http://http.kali.org/kali kali-rolling main contrib non-free non-free-firmware
+
 apt update 
 
 (if face any error than do this) 
+
 wget http://http.kali.org/kali/pool/main/k/kali-archive-keyring/kali-archive-keyring_2022.1_all.deb 
+
 dpkg -i kali-archive-keyring_2022.1_all.deb 
 
 
 # now install gui (am going for kali, you can choose any either ubuntu or any debian)
+
 apt upgrade 
-apt install -y kali-linux-default 
-apt install kali-desktop-xfce 
+
+apt install -y kali-linux-default
+
+apt install kali-desktop-xfce
+
 reboot 
+
 vncserver 
