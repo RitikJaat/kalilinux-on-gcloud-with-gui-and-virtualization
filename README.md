@@ -24,17 +24,17 @@ grep -cw vmx /proc/cpuinfo
 
 now install gui (am going for kali, you can choose any either ubuntu or any debian)
 
-sudo -i
-cd /etc/apt
-nano sources.list
+sudo -i 
+cd /etc/apt 
+nano sources.list 
 # delete all the deb files here and paste this
 deb http://http.kali.org/kali kali-rolling main contrib non-free non-free-firmware
-apt update
+apt update 
 # if face any error than do this 
-wget http://http.kali.org/kali/pool/main/k/kali-archive-keyring/kali-archive-keyring_2022.1_all.deb
-dpkg -i kali-archive-keyring_2022.1_all.deb
-apt upgrade
-apt install -y kali-linux-default
-apt install kali-desktop-xfce
-reboot
-vncserver
+wget http://http.kali.org/kali/pool/main/k/kali-archive-keyring/kali-archive-keyring_2022.1_all.deb 
+dpkg -i kali-archive-keyring_2022.1_all.deb 
+apt upgrade 
+apt install -y kali-linux-default 
+apt install kali-desktop-xfce 
+reboot 
+vncserver 
