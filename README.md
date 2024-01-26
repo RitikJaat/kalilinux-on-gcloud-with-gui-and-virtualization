@@ -66,6 +66,5 @@ apt install kali-desktop-xfce
 reboot
 ```
 ```
-
 vncserver 
 ```
