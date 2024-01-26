@@ -63,7 +63,9 @@ apt install -y kali-linux-default
 apt install kali-desktop-xfce
 ```
 ```
-reboot 
+reboot
+```
+```
 
 vncserver 
 ```
